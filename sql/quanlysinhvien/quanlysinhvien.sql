@@ -1,6 +1,6 @@
-create database QuanLyDiemThi;
+create database QuanLySinhvien;
 /*Bước 2: Chọn Database QuanLySinhVien để thao tác với cơ sở dữ liệu này*/
-USE QuanLyDiemThi;
+USE QuanLySinhVien;
 /*Bước 3: Tiếp theo sử dụng câu lệnh Create Table để tạo bảng Class với các trường 
 ClassId, ClassName, StartDate, Status như sau:*/
 create table Class (
