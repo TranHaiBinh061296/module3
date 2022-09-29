@@ -133,7 +133,13 @@ where hd.NgayMuaHang like "2006-%-%"))
 and sp.NuocSX = "Trung Quoc";
 
 /*18. Có bao nhiêu hóa đơn không phải của khách hàng đăng ký thành viên mua?*/
+select * from hoadon
+where MaKH is null;
+
 /*19. Cho biết trị giá hóa đơn cao nhất, thấp nhất là bao nhiêu ?*/
+select max(TriGia) from hoadon;
+select min(TriGia) from hoadon;
+
 /*20. Trị giá trung bình của tất cả các hóa đơn được bán ra trong năm 2006 là bao nhiêu?*/
 select round(avg(hd.TriGia)) as "Trị giá trung bình nam 2006"
 from hoadon hd
