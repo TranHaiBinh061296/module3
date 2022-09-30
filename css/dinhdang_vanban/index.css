@@ -1,0 +1,22 @@
+.container {
+    width: 600px;
+    height: 400px;
+}
+.paragraph {
+       text-indent: 40px;
+       text-align: justify;
+}
+.bold {
+    font-weight:800;
+    color: blue;
+}
+p.bachkhoa {
+    line-height: 0%;
+}
+.sup {
+    color: blue;
+}
+.peninsula {
+    color: aqua;
+    font-weight: 800;
+}
