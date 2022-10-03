@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../fontawesome-free-6.2.0-web/css/all.css">
+    <title>Facebook</title>
+</head>
+<style>
+    body {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        height: 60px;
+        width: 100%;
+        background-color: aliceblue;
+        z-index: 10;
+        box-shadow: 0 0 5px 0 #d0d1d2;
+        position: fixed;
+
+    }
+
+    #facebook {
+        color: blue;
+        font-size: 40px;
+        top: 10px;
+        left: 10px;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    #find {
+        height: 35px;
+        width: 240px;
+        border-radius: 20px;
+        padding-left: 40px;
+        position: relative;
+        top: 7px;
+        left: 60px;
+        background-color: rgba(255, 255, 255, 0.842);
+        color: gray;
+        border: 1px solid gainsboro;
+
+    }
+
+    #search {
+        position: absolute;
+        left: 70px;
+        top: 25px;
+        color: gray;
+    }
+
+    .licon {
+        position: relative;
+        font-size: 25px;
+        top: 7px;
+        left: 180px;
+        margin-right: 80px;
+    }
+
+    #home {
+        color: blue;
+    }
+
+    .right {
+        font-size: 25px;
+        position: relative;
+        top: 7px;
+        left: 340px;
+        margin-right: 10px;
+    }
+
+    .container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50px;
+        /* background-color: #d0d1d2; */
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;
+        height: 70%;
+        top: 100px;
+        overflow: scroll;
+    }
+
+    .sidebar-left {
+        display: flex;
+        margin-left: 20px;
+        cursor: pointer;
+        padding: 10px;
+        height: 25px;
+    }
+
+    section {
+        position: absolute;
+        height: 100%;
+        width: 60%;
+        left: 360px;
+        top: 50px;
+    }
+
+    .content {
+        position: relative;
+        width: 65%;
+        left: 45px;
+        /* background-color: white;
+        height: 300px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        padding: 20px; */
+    }
+
+    aside {
+        height: 100%;
+        position: fixed;
+        right: 0px;
+        width: 20%;
+        overflow: scroll;
+    }
+    .menuleft {
+            display: flex;
+            margin-left: 20px;
+            cursor: pointer;
+            padding: 10px;
+            height: 25px;
+        }
+    #avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: relative;
+        top: 12px;
+        left: 340px;
+    }
+
+    #avatar-left {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 0;
+        float: left;
+    }
+
+    .team {
+        color: blue;
+    }
+
+    .story {
+        width: 550px;
+        height: 450px;
+    }
+
+    [type="button"] {
+        color: white;
+        width: 100px;
+        height: 30px;
+        background-color: blue;
+        border-radius: 40px;
+    }
+
+    [type="button1"] {
+        color: white;
+        width: 100px;
+        height: 30px;
+        background-color: rgb(136, 128, 128);
+        border-radius: 30px;
+    }
+    .fa-bomb {
+        position: relative;
+        left: 35px;
+        color: green;
+    }
+</style>
+
+<body>
+    <header>
+        <i class="fa-brands fa-facebook" id="facebook"></i>
+        <input type="text" value="Tìm kiếm trên Facebook" id="find">
+        <i class="fa-sharp fa-solid fa-magnifying-glass" id="search"></i>
+
+        <i class="fa-sharp fa-solid fa-house licon" id="home"></i>
+        <i class="fa-brands fa-youtube licon"></i>
+        <i class="fa-sharp fa-solid fa-shop licon"></i>
+        <i class="fa-solid fa-users-rectangle licon"></i>
+        <i class="fa-sharp fa-solid fa-gamepad licon"></i>
+
+        <i class="fa-solid fa-bars right" id="menu"></i>
+        <i class="fa-brands fa-facebook-messenger right" id="mess"></i>
+        <i class="fa-solid fa-bell right" id="bell"></i>
+        <img src="imagefb/avatar.jpg" id="avatar" alt="">
+    </header>
+    <div class="container">
+        <nav>
+            <div class="sidebar-left">
+                <img src="imagefb/avatar.jpg" id="avatar-left" alt="">
+                <span>Trần Hải Bình</span>
+            </div>
+            <div class="sidebar-left">
+                <i class="fa-sharp fa-solid fa-users-line"></i>
+                <span>Bạn bè</span>
+            </div>
+            <div class="sidebar-left">
+                <i class="fa-solid fa-clock"></i>
+                <span>Kỷ niệm</span>
+            </div>
+            <div class="sidebar-left">
+                <i class="fa-solid fa-users-rectangle team"></i>
+                <span>Nhóm</span>
+            </div>
+            <div class="sidebar-left">
+                <i class="fa-sharp fa-solid fa-shop team"></i>
+                <span>Marketplace</span>
+            </div>
+            <div class="sidebar-left">
+                <i class="fa-brands fa-youtube team"></i>
+                <span>Watch</span>
+            </div>
+            <div class="sidebar-left">
+                <i class="fa-solid fa-square-up-right"></i>
+                <span>Xem thêm</span>
+            </div>
+        </nav>
+        <section>
+            <div class="content ithink">
+                <img src="imagefb/avatar.jpg" id="avatar-left" alt="">
+                <input type="text" value="Bình ơi, bạn đang nghĩ gì thế?" id="find" class="think">
+            </div>
+            <br>
+            <div class="content ithink">
+                <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/307939410_5294469237273768_6179656249039573618_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=wVEOeQUouvwAX-zHiFz&_nc_ht=scontent.fhan14-3.fna&oh=00_AT8j87z_Q0KJ9qJpObbOYYLJrtYi3LS9WN2hBTJihMZwTQ&oe=63402DCB"
+                    id="avatar-left" alt="">
+                <h4> Lê Bá Lộc đang cảm thấy hạnh phúc cùng với Thu Thủy</h4>
+                <h4>Lòng đơn giản, thế giới sẽ giản đơn
+                    Lòng tự tại, cuộc sống sẽ yên bình...🍀
+                    Check in vài bức ảnh vào một ngày nắng đẹp giữa mùa thu ở Huế 😍</h4>
+                <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.15752-9/308887844_409949574626979_855561553328335864_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=t9M6aqxaCSwAX9eNb2e&_nc_ht=scontent.fhan14-1.fna&oh=03_AVLQhJni-PHE9hPGwKDCTcLkQSRCQBD0BD2yz2ITY80HnA&oe=636112FF"
+                    class="story" alt="">
+            </div>
+            <br>
+            <div class="content ithink">
+                <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/307939410_5294469237273768_6179656249039573618_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=wVEOeQUouvwAX-zHiFz&_nc_ht=scontent.fhan14-3.fna&oh=00_AT8j87z_Q0KJ9qJpObbOYYLJrtYi3LS9WN2hBTJihMZwTQ&oe=63402DCB"
+                    id="avatar-left" alt="">
+                <h4>  Lê Bá Lộc đang cảm thấy hạnh phúc cùng với Thu Thủy</h4>
+                <h4>Lòng đơn giản, thế giới sẽ giản đơn
+                    Lòng tự tại, cuộc sống sẽ yên bình...🍀
+                    Check in vài bức ảnh vào một ngày nắng đẹp giữa mùa thu ở Huế 😍</h4>
+                <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.15752-9/308887844_409949574626979_855561553328335864_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=t9M6aqxaCSwAX9eNb2e&_nc_ht=scontent.fhan14-1.fna&oh=03_AVLQhJni-PHE9hPGwKDCTcLkQSRCQBD0BD2yz2ITY80HnA&oe=636112FF"
+                    class="story" alt="">
+            </div>
+        </section>
+        <aside>
+            <h4><i class="fa-sharp fa-solid fa-users"></i>Lời mời kết bạn</h4>
+            <h4>Hoàng Đức Khanh</h4>
+            <button type="button">Xác nhận</button>
+            <button type="button1">Xóa</button>
+            <h4>Nguyễn Minh Hiếu</h4>
+            <button type="button">Xác nhận</button>
+            <button type="button1">Xóa</button>
+            <h4>Lê Bá Lộc</h4>
+            <button type="button">Xác nhận</button>
+            <button type="button1">Xóa</button>
+            <h4>Hoàng Hữu Qúy</h4>
+            <button type="button">Xác nhận</button>
+            <button type="button1">Xóa</button>
+            <h3></i>Sinh nhật</h3>
+            <h4><i class="fa-solid fa-champagne-glasses"></i>  Hôm nay là sinh nhật của Lý Thanh Tùng</h4>
+            <hr>
+            <h3>Người liên hệ</h3>
+            <img src="imagefb/avatar.jpg" id="avatar-left" alt="">
+            <h4>Nguyễn Thanh Tùng <i class="fa-sharp fa-solid fa-bomb"></i></h4>
+            <img src="imagefb/avatar.jpg" id="avatar-left" alt="">
+            <h4>Nguyễn Thúc Thùy Tiên <i class="fa-sharp fa-solid fa-bomb"></i></h4>
+            <img src="imagefb/avatar.jpg" id="avatar-left" alt="">
+            <h4>Ronaldo <i class="fa-sharp fa-solid fa-bomb"></i></h4>
+            <img src="imagefb/avatar.jpg" id="avatar-left" alt="">
+            <h4>Messi <i class="fa-sharp fa-solid fa-bomb"></i></h4>
+
+
+            
+        </aside>
+    </div>
+</body>
+
+</html>

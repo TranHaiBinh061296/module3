@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <link rel="stylesheet" href="./../../fontawesome-free-6.2.0-web/css/all.css"/>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div.items {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        div.item {
+            width: 32%;
+            margin: 0.5%;
+            background-color: aqua;
+            border: 2px solid gray;
+            padding: 5px;
+        }
+        div.item img {
+            width: 100%;
+        }
+        ul {
+            list-style-type:none ;
+            padding: 0;
+            margin: 0;
+        }
+        ul.menu {
+            background-color: azure;
+            justify-content: center;
+        }
+        nav > ul.menu {
+            display: flex;
+        }
+        ul.menu > li {
+            max-width: 200px;
+            border-right: 1px solid grey;
+            /* padding: 20px; */
+        }
+        ul.menu > li > a {
+            text-decoration: none;
+            display: block;
+            padding: 20px;
+        }
+        ul.menu > li > a:hover {
+            background-color: aqua;
+            color: gray;
+        }
+        .subcontent {
+            display: none;
+        }
+        .sub:hover .subcontent{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Trang chủ</a></li>
+            <li class="sub"><a href="#">Sản phẩm</a>
+            <ul class="menu subcontent">
+                <li><a href="#">Thiết kế WEB</a></li>
+                <li><a href="#">Ghế</a></li>
+                <li><a href="#">Bàn</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li class="login"><a href="#">Đăng nhập</a></li>
+            <li class="login"><a href="#">Đăng ký</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="items">
+            <div class="item">
+                <h1><i class="fa-solid fa-van-shuttle"></i>THIẾT KẾ WEB</h1>
+                <div>
+                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/10/1/637686973775896947_ip-12-dd.jpg" alt="demo">
+                </div>
+            </div>
+            <div class="item">
+                <h1><i class="fa-brands fa-telegram"></i>THIẾT KẾ WEB</h1>
+                <div>
+                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/10/1/637686973775896947_ip-12-dd.jpg" alt="demo">
+                </div>
+            </div>
+            <div class="item">
+                <h1>THIẾT KẾ WEB</h1>
+                <div>
+                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/10/1/637686973775896947_ip-12-dd.jpg" alt="demo">
+                </div>
+            </div>
+            <div class="item">
+                <h1>THIẾT KẾ WEB</h1>
+                <div>
+                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/10/1/637686973775896947_ip-12-dd.jpg" alt="demo">
+                </div>
+            </div>
+            <div class="item">
+                <h1>THIẾT KẾ WEB</h1>
+                <div>
+                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/10/1/637686973775896947_ip-12-dd.jpg" alt="demo">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
