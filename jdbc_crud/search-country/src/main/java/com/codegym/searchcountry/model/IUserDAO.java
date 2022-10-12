@@ -1,6 +1,7 @@
-package com.codegym.usermanager.dao;
+package com.codegym.searchcountry.model;
 
-import com.codegym.usermanager.model.User;
+
+import com.codegym.searchcountry.view.User;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -15,10 +16,6 @@ public interface IUserDAO {
     public boolean deleteUser(int id) throws SQLException;
 
     public boolean updateUser(User user) throws SQLException;
-    User getUserById(int id);
 
-    void insertUserStore(User user) throws SQLException;
-    void addUserTransaction(User user, int[] permision);
-    public void insertUpdateWithoutTransaction();
-    public void insertUpdateUseTransaction();
+    public boolean checkEmailExists(String email) throws SQLException;
 }
