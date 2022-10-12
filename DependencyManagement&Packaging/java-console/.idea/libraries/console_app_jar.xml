@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="console_app_jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../console_app/out/artifacts/console_app_jar/console_app_jar.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
